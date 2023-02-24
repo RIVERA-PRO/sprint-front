@@ -5,12 +5,16 @@ import Home from './components/Home';
 import Homefondo from './components/Homefondo';
 
 
+
 function App() {
   return (
     <div className="App">
-      <Header/>
+     <div className='page1'>
+     <Header/>
       <Home/>
       <Homefondo/>
+     </div>
+    
     
     </div>
   );

@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.container-form{
+    height: 100vh;
+    width: 100%;
+    padding: 100px 10% ;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.formulario input{
+    border-radius: 100px;
+    
+}
+
+.formulario .button{
+    width: 100%;
+    border-radius: 100px;
+    
+}
+
