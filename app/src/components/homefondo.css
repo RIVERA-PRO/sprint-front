@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align:end;
 }
 
 .contain-home-fondo{
@@ -89,7 +90,45 @@ line-height: 95.19%;
 
 .home-fondo-text{
     padding-top: 100px;
+    
 }
+
+
+@media (max-width: 1024px){
+    .home-fondo-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+       
+    }
+  
+    
+    .home-fondo-text button{
+        padding: 10px ;
+        font-size: 20px;
+    }
+
+    .home-fondo-text{
+        width: 100%;
+    }
+    .home-fondo-text h1{
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        
+    }
+
+    .home-fondo-text h6{
+        font-size: 17px;
+    }
+    .home-fondo-text p{
+        font-size: 14px;
+    }
+}
+
 
 
 @media (max-width: 720px){
