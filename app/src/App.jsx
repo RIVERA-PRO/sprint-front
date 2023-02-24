@@ -1,14 +1,16 @@
 
 import './App.css';
-import Header from './layouts/Header.jsx'
 import Home from './components/Home';
 import Homefondo from './components/Homefondo';
 import Formulario from './components/form/Formulario';
+import Navbar from './components/navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+     <header>
+     <Navbar/>
+     </header>
       <Home/>
       <Homefondo/>
       <Formulario/>
