@@ -6,7 +6,7 @@
     align-self: center;
     justify-content: center;
     height: 100vh;
-    margin-top: 10%;
+    padding-top: 20%;
 }
 
 .register>div{
@@ -96,6 +96,7 @@
     box-shadow: 5px 5px rgb(244, 179, 51);
     text-decoration: none;
     margin: 0 auto;
+    border: none;
 }
 
 .form .sign-in-google{
@@ -180,10 +181,11 @@
 
 
 
+
 @media (max-width: 1024px){
     .register {
         
-        margin-top: 30%;
+        padding-top: 20%;
     }
     .form fieldset {
         width: 100%;

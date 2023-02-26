@@ -10,7 +10,7 @@ return (
  
   <nav>
    <div className='navbar'>
-    <div className='nav_logo'></div>
+    
     <div className={`nav_items ${isOpen && "open"}`}>
       <div className='porfile'>
       
