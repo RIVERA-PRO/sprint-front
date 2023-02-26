@@ -12,7 +12,7 @@ export default function Formulario() {
     const passwordRef = useRef();
     const confirmPasswordRef = useRef();
     
-    const form = document.getElementById('formulario')
+
   
     const handleSubmit = async (event) => {
       event.preventDefault();
@@ -33,7 +33,7 @@ export default function Formulario() {
                 url,    /* URL del endpoint para crear una categoria */
                 data    /* objeto necesario para crear una categoria (tal cual lo armo en postman) */
             )
-            form.reset()
+           
             alert("Successful registration")
         } catch(error) {
             console.log(error)
@@ -41,7 +41,10 @@ export default function Formulario() {
         }
     }else{
       alert("Passwords do not match")
+
     }
+
+    event.target.reset()
     
     }
   
@@ -55,37 +58,44 @@ export default function Formulario() {
             
             <h2>Welcome!</h2>
             <p className='register-text'>Discover manga, manhua and manhwa, track your progress, have fun, read manga.</p>
+
             <form className="form" id="formulario" onSubmit={handleSubmit}>
 
             <fieldset>
-             <legend>Name</legend>
-             <input type="text" name="name" id="name" ref={nameRef} />
-             <img src='./img/profile.svg' alt='profile'/> 
-            </fieldset>
-
-            <fieldset>
+            <legend>Name</legend>
+            <input type="text" name="name" id="name" ref={nameRef} required />
+            <img src='./img/profile.svg' alt='profile'/> 
+          </fieldset>
+          <fieldset>
             <legend>Email</legend>
-            <input type="email" name="mail" id="mail" ref={emailRef} />
+            <input type="email" name="mail" id="mail" ref={emailRef}  required />
             <img src='./img/@.svg' alt='@'/>
-            </fieldset>
-
-            <fieldset>
+          </fieldset>
+          <fieldset>
             <legend>Password</legend>
-            <input type="password" name="password" id="password" ref={passwordRef} />
+            <input type="password" name="password" id="password" ref={passwordRef}  required />
             <img src='./img/lock.svg' alt='lock'/>
-            </fieldset>
-
-            <fieldset>
+          </fieldset>
+          <fieldset>
             <legend>Confirm Password</legend>
-            <input  type="password" name="confirm-password"  id="confirm-password"  ref={confirmPasswordRef}/>
+            <input
+              type="password"
+              name="confirm_password"
+              id="confirm_password"
+              ref={confirmPasswordRef}
+              required 
+            />
             <img src='./img/lock.svg' alt='lock'/>
-            </fieldset>
-
-
-            <fieldset className="notification-check">
-            <input type="checkbox"  name="email-notification"  id="email-notification"/>
+          </fieldset>
+          <fieldset className="notification-check">
+            <input
+              type="checkbox"
+              name="email-notification"
+              id="email-notification"
+              
+            />
             <label htmlFor="email-notification">Send notification to my email</label>
-            </fieldset>
+          </fieldset>
 
             <div>
             <button type="submit" className="sign-up"> Sign up</button>

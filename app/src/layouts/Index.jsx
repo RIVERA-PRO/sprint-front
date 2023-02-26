@@ -2,8 +2,9 @@ import React from 'react'
 import Home from '../components/hom/Home';
 import Homefondo from '../components/Homefondo'
 import Formulario from '../components/form/Formulario';
-import Header from '../layouts/Header';
-
+import Header from './Header';
+import Footer from '../components/footer/Footer';
+import Fondo from '../components/backround/Fondo';
 
 
 export default function Index() {
@@ -13,6 +14,8 @@ export default function Index() {
       <Home/>
     <Homefondo/>
       <Formulario/>
+      <Fondo/>
+      <Footer/>
     </div>
   )
 }

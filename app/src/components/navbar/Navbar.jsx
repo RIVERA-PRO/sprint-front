@@ -23,8 +23,8 @@ return (
 
       </div>
 
-      <a href="#"><span>Home</span></a>
-      <a href="#">Mongos</a>
+        <a href="#"><span>Home</span></a>
+        <a href="#">Mongos</a>
         <a href="#">My mongos</a>
         <a href="#">Favourites</a>
         <a href="#">Logout</a>
