@@ -66,34 +66,27 @@ export default function Formulario() {
             <input type="text" name="name" id="name" ref={nameRef} required />
             <img src='./img/profile.svg' alt='profile'/> 
           </fieldset>
+
           <fieldset>
             <legend>Email</legend>
             <input type="email" name="mail" id="mail" ref={emailRef}  required />
             <img src='./img/@.svg' alt='@'/>
           </fieldset>
+
           <fieldset>
             <legend>Password</legend>
             <input type="password" name="password" id="password" ref={passwordRef}  required />
             <img src='./img/lock.svg' alt='lock'/>
           </fieldset>
+
           <fieldset>
             <legend>Confirm Password</legend>
-            <input
-              type="password"
-              name="confirm_password"
-              id="confirm_password"
-              ref={confirmPasswordRef}
-              required 
-            />
+            <input type="password"  name="confirm_password" id="confirm_password" ref={confirmPasswordRef} required />
             <img src='./img/lock.svg' alt='lock'/>
           </fieldset>
+
           <fieldset className="notification-check">
-            <input
-              type="checkbox"
-              name="email-notification"
-              id="email-notification"
-              
-            />
+            <input type="checkbox" name="email-notification" id="email-notification"/>
             <label htmlFor="email-notification">Send notification to my email</label>
           </fieldset>
 
