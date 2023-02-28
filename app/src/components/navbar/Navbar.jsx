@@ -6,6 +6,8 @@ const Navbar = ()=>{
 
   const [isOpen, setIsOpen] = useState(false)
 
+ 
+
 return (
  
   <nav>
@@ -26,7 +28,7 @@ return (
         <a href="#">Logout</a>
     </div>
 
-    <div className={`nav_toggle  ${isOpen && "open"}`} onClick={()=> setIsOpen(!isOpen)}>
+    <div className={`nav_toggle  ${isOpen && "open"}`} onClick={()=> setIsOpen(!isOpen)}> 
       <span></span>
       <span></span>
       <span></span>

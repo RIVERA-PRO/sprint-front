@@ -1,13 +1,15 @@
 
 import './App.css';
-import Index from './layouts/Index';
-
+// import Index from './layouts/Index';
+import Indexlayout from './layouts/Indexlayout'
 
 
 function App() {
   return (
     <div className="App">
-    <Index/>
+    {/* <Index/> */}
+
+    <Indexlayout/>
 
     </div>
   );

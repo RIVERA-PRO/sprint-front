@@ -78,7 +78,8 @@ nav{
     height: 100vh;
 }
 .nav_items.open{
-    transform: translateX(0) !important
+    transform: translateX(0) !important;
+  
 }
 
 .nav_items a{

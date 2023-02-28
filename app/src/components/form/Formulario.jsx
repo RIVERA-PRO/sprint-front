@@ -30,8 +30,8 @@ export default function Formulario() {
       if(passwordRef.current.value === confirmPasswordRef.current.value){
         try {
             await axios.post(
-                url,    /* URL del endpoint para crear una categoria */
-                data    /* objeto necesario para crear una categoria (tal cual lo armo en postman) */
+                url,   
+                data   
             )
            
             alert("Successful registration")
